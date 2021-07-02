@@ -1,0 +1,283 @@
+/*
+* @author    BEST Lisbon http://best.tecnico.ulisboa.pt/
+* @copyright BEST Lisbon 2020. All rights reserved.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+.navbar-nav {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+  nav {
+    background-color: rgba(51, 163, 177, 0.8) !important;
+  }
+  
+  nav li {
+    text-transform: uppercase;
+  }
+  
+  nav li:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  nav li a {
+    color: white !important;
+  }
+  
+  nav li a:hover {
+    color: white !important;
+  }
+  
+  nav li .active {
+    color: white !important;
+    border-bottom: 2px solid white;
+  }
+
+#slideshow .carousel-inner .carousel-item .img-parent:before {
+    position: absolute;
+    background: black;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+#slideshow .carousel-inner .carousel-item .img-parent {
+    background: url(../images/DiscussionLEoE1.jpg) no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.div-parent {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgLeoe {
+    max-width: 100%;
+    max-height: 250px !important;
+    margin: 0 0.5rem;
+}
+
+#slideshow {
+    margin-top: 75px;
+}
+
+.green {
+    background-color: rgba(20, 144, 69, 0.9);
+}
+
+svg {
+    margin-top: -3%;
+}
+
+
+.grey {
+    background-color: #e4e0e0; 
+}
+
+/* NEW STYLES */
+#best-faq a {
+    margin: 15px 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+#best-faq .col-md-6{
+    padding-bottom: 25px;
+}
+
+.leoe-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #004750;
+}
+
+.leoe-descrpt {
+    background-color: #d6edef !important;
+    border-radius: 10px;
+}
+
+.icons {
+    color: #004750;
+    font-size: 45px;
+}
+
+.imgLeoe {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.col-pr {
+    margin-right: 2rem !important;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leoe-text {
+    text-indent: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.timer {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #00181b;
+    border-radius: 10px;
+    color: #addae0;
+    font-size: 40px;
+    padding: 0.75rem;
+}
+
+.applications {
+    background-color: #004750 !important;
+    border-color: #004750 !important;
+    /*-webkit-box-shadow: none !important;
+    box-shadow: none !important;*/
+}
+
+.applications:hover {
+    scale-color(#004750, lightness: -50%);
+}
+
+.horizontal-scroll{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.linkedin-size {
+    font-size: 30px;
+}
+
+.question {
+    margin: 0 auto;
+    text-decoration: underline !important;
+    font-size: 25px;
+    color: #00181b;
+    transition: all 0.3s ease-in-out;
+}
+
+.question:hover {
+    color: #004750;
+}
+
+.margin-top {
+    margin-top: 3rem;
+}
+
+.panel-names{
+    background-image: url("../images/teachers.png");
+    color: #d6edef;
+}
+
+.card-fix{
+    padding: 0 20px 20px 20px !important;
+}
+
+.reg-button{
+    background-color: #addae0;
+    border-radius: 5px;
+}
+
+.video-bg{
+    background: rgb(214,237,239);
+    background: linear-gradient(90deg, rgba(214,237,239,1) 0%, rgba(133,200,208,1) 25%, rgba(38,122,133,1) 50%, rgba(98,161,169,1) 75%, rgba(214,237,239,1) 100%);
+}
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+}
+  
+@keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+    .timer {
+        font-size: 20px;
+    }
+    .col {
+        padding-right: 0.25rem !important;
+        padding-left: 0.25rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+}
+
+@media (min-width: 576px) {
+    #slideshow .carousel-inner {
+        max-height: 500px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    #slideshow .carousel-inner {
+        max-height: 600px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    #slideshow .carousel-inner {
+        max-height: 700px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    #slideshow .carousel-inner {
+        max-height: 600px;
+    }
+
+    #slideshow .carousel-inner .carousel-item > img {
+        margin-top: -15%;
+    }
+}
